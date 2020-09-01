@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ex-github-pages-hosting"
+    }
+  },
+  "defaultProject": "ex-github-pages-hosting",
+  "cli": {
+    "analytics": false
+  }
 }

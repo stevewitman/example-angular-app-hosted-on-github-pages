@@ -1,27 +1,43 @@
-# ExGithubPagesHosting
+# Example App: Host Angular app on GitHub Pages
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+Create a GitHub repo for the project and add a remote.
 
-## Development server
+```
+git remote add origin git@github.com:stevewitman/example-angular-app-hosted-on-github-pages.git
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Commit and Push Angular app to GitHub.
 
-## Code scaffolding
+Add `angular-cli-ghpages` to your project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+ng add angular-cli-ghpages
+```
 
-## Build
+If you are not using a custom domain, run ng deploy and specify the base href with the name of the **repo-name** between two forward slashes to build and deploy.  Use repo name, which may be different different than the project name.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+ng deploy --base-href=/ex-github-pages-hosting/
+```
 
-## Running unit tests
+To use a custom domain, see docs ...
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+NPM package: [angular-cli-ghpages](https://www.npmjs.com/package/angular-cli-ghpages)
 
-## Running end-to-end tests
+## To run this example
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+With [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9 installed ...
 
-## Further help
+Clone or download this repo and run `npm install`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+
+The app will automatically reload if you change any of the source files.
+
+## Demo
+
+Unless you are using a custom domain, you can see your deployed page at https://<user_name>.github.io/<repo_name>/.
+
+Example URL: https://stevewitman.github.io/example-angular-app-hosted-on-github-pages/
+
+
